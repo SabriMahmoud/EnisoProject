@@ -1,27 +1,467 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--
+Template Name: Shicso
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Copyright: OS-Templates.com
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
 <head>
-    <meta charset="UTF-8">
-   
-    <title>ACCEUIL</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
+<title>Eniso</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<link href="style.css" rel="stylesheet" type="text/css">
 </head>
-<body>
-    <div class="container">
-        <div class="jumbotron">
-            <a href="{% url 'index' %}">Acceuil</a>
-            
-            {% if user.is_authenticated %}
-            <a href="{% url 'user_logout' %}">Se Deconnecter</a>
-            {% else %}
-            <a href="{% url 'user_login' %}">Se Connecter</a>
-            {% endif %}
-            <h1>Ecole National D'Ingenieurs De Sousse </h1>
-            {% block content %}
-
-            {% endblock %}
-        </div>
-
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row0">
+  <header id="header" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div id="logo" class="one_quarter first">
+      <h1 class="logoname clear"><a href="index.html"><img class="log" src="images/demo/Logo2_ENISo,_Tunisie.svg.png"><span>Eniso</span></a></h1>
+      <p>Ecole Nationale d'Ingenieurs De Sousse</p>
     </div>
+    <div class="three_quarter">
+      <ul class="nospace clear">
+        <li class="one_third first">
+          <div class="block clear"><a href="#"><i class="fas fa-phone"></i></a> <span><strong>Contacter l'Administration :</strong> +216 73 369 500</span></div>
+        </li>
+        <li class="one_third">
+          <div class="block clear"><a href="#"><i class="fas fa-envelope"></i></a> <span><strong>Fax : </strong> +216 73 369 506</span></div>
+        </li>
+        <li class="one_third">
+          <div class="block clear"><a href="#"><i class="fas fa-clock"></i></a> <span><strong>Adresse :</strong> Adresse : BP 264 Sousse Erriadh 4023</span></div>
+        </li>
+      </ul>
+    </div>
+    <!-- ################################################################################################ -->
+  </header>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <div class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <nav id="mainav">
+      <ul class="clear">
+        <li class="active"><a href="index.html">Acceil</a></li>
+        <li><a class="drop" href="#">Administration</a>
+          <ul>
+            <li><a href="pages/gallery.html">Service Informatique</a></li>
+            <li><a href="pages/full-width.html">Service des Finances</a></li>
+            <li><a href="pages/sidebar-left.html">Service Scolarité</a></li>
+            <li><a href="pages/sidebar-right.html">Bibliothéque</a></li>
+            <li><a href="pages/basic-grid.html">Techniciens de Labos</a></li>
+            <li><a href="pages/font-icons.html">Resources Humaines</a></li>
+          </ul>
+        </li>
+        <li><a class="drop" href="#">Nouvelle</a>
+          <ul>
+            <li><a href="#">Certification</a></li>
+            <li><a class="drop" href="#">Co-diplomation</a>
+              <ul>
+                <li><a href="#">Level 3</a></li>
+                <li><a href="#">Level 3</a></li>
+                <li><a href="#">Level 3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Bourses D'Etudes</a></li>
+          </ul>
+        </li>
+        <li><a href="#">L'ENISO</a></li>
+        <li><a href="#">Formation Initiale</a></li>
+        <li><a href="#">Masters et Doctorat</a></li>
+        <li><a href="#">Association et clubs</a></li>
+      </ul>
+    </nav>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper bgded overlay" style="background-image:url('images/demo/backgrounds/Students.jpg');">
+  
+  
+  
+  <div id="pageintro" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <article>
+      <h3 class="heading">On vous prepare<br>
+        pour le Future</h3>
+      <footer>
+        <ul class="nospace inline pushright">
+          <li><a class="btn" href="#">Clubs</a></li>
+          <li><a class="btn inverse" href="#">Formations d'Ingenieurs</a></li>
+        </ul>
+      </footer>
+    </article>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <article class="group">
+      <div class="one_half first">
+        <h6 class="heading underline font-x2">A propos</h6>
+        <p>L'Ecole Nationale d'Ingénieurs de Sousse ou ENISo est une école d'ingénieurs tunisienne qui dépend de l'Université de Sousse. Il vise à répondre, jour après jour, à un besoin national croissant d'ingénieurs spécialisés dans les industries de haute technologie. Avec ses trois filières, ses masters recherche et son master professionnel, elle forme des ingénieurs en génie informatique appliqué, en génie des télécommunications embarquées, en mécatronique, en génie mécanique et de production et en génie électronique industriel.</p>
+        <p class="btmspace-30">Créée en juillet 2005, l'ENISo est d'abord hébergée dans le quartier Bab Jedid de Sousse, avant de s'installer en septembre 2011 dans le Technopole de Sousse, à proximité de la crèche. </p>
+        <footer><a class="btn" href="#">Lire plus</a></footer>
+      </div>
+      <div class="one_half"><a class="imgover" href="#"><img class="borderedbox inspace-10" src="images/demo/Student.png" alt=""></a></div>
+    </article>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper bgded overlay dark" style="background-image:url('images/demo/backgrounds/01.png');">
+  <div id="shout" class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <article>
+      <h3 class="heading font-x2">N'hésitez pas à nous rejoindre</h3>
+      <p>Adipiscing dignissim non lectus pellentesque tellus nisi imperdiet at pretium ut iaculis tempor ligula nulla facilisi aliquam venenatis leo et orci sed mauris fusce aliquam suspendisse potenti sed tempus tempor.</p>
+    </article>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <section id="services" class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <div class="center btmspace-80">
+      <h6 class="heading underline font-x2">Nos Filières</h6>
+    </div>
+    <ul class="nospace group">
+      <li class="one_third">
+        <article><a href="#"><i class="fab fa-fort-awesome"></i></a>
+          <h6 class="heading">Informatique Appliquée</h6>
+          <p>Adossée au département Informatique Industrielle, la filière Informatique Appliquée (IA) dispense une formation polyvalente axée autour de l’informatique, l’automatique, la robotique et les communications.</p>
+          <footer><a href="#"><i class="fas fa-arrow-right"></i></a></footer>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><a href="#"><i class="fab fa-deviantart"></i></a>
+          <h6 class="heading">Génie Mécatronique</h6>
+          <p>Adossée au département de Mécanique Avancée, la filière Mécatronique dispense une formation polyvalente axée autour de la mécanique, l’électronique et l’informatique.</p>
+          <footer><a href="#"><i class="fas fa-arrow-right"></i></a></footer>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><a href="#"><i class="fab fa-sticker-mule"></i></a>
+          <h6 class="heading">Génie Télécommunications Embarquées</h6>
+          <p>Adossée au département Informatique Industrielle, la filière Télécommunications Embarquées (TE) dispense une formation polyvalente axée autour de l’internet des objets (IoT).</p>
+          <footer><a href="#"><i class="fas fa-arrow-right"></i></a></footer>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><a href="#"><i class="fas fa-user-secret"></i></a>
+          <h6 class="heading"></h6>
+          <p>Formation Initiale</p>
+          <footer><a href="#"><i class="fas fa-arrow-right"></i></a></footer>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><a href="#"><i class="fas fa-quidditch"></i></a>
+          <h6 class="heading">Génie Mécanique & Productique</h6>
+          <p>Adossée au département de Mécanique Avancée, la filière Mécanique et Productique dispense une formation polyvalente axée autour de la fabrication, matériaux, mécanique, conception, gestion, etc.</p>
+          <footer><a href="#"><i class="fas fa-arrow-right"></i></a></footer>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><a href="#"><i class="fas fa-wheelchair"></i></a>
+          <h6 class="heading">Génie Electronique Industrielle</h6>
+          <p>Adossée au département Electronique Industrielle, la filière qui porte le même nom (EI) dispense une formation polyvalente axée autour de l’électronique, les systèmes électriques et l’informatique.</p>
+          <footer><a href="#"><i class="fas fa-arrow-right"></i></a></footer>
+        </article>
+      </li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </section>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper bgded overlay light" style="background-image:url('images/demo/backgrounds/01.png');">
+  <section id="cta" class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <h6 class="three_quarter first">Pellentesque tincidunt et natoque penatibus</h6>
+    <footer class="one_quarter"><a class="btn" href="#">Parturient nascetur</a></footer>
+    <!-- ################################################################################################ -->
+  </section>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <section id="team" class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <div class="center btmspace-80">
+      <h6 class="heading underline font-x2">Clubs</h6>
+    </div>
+    <ul class="nospace group">
+      <li class="one_quarter first">
+        <article>
+          <figure><a class="imgover" href="#"><img src="images/demo/jee.jpg" alt=""></a>
+            <figcaption class="heading">Junior Entreprise ENISo - JEENISo</figcaption>
+          </figure>
+          <em>Enseignement Théorique Et communications</em>
+          <p>JEENISo, Junior Entreprise ENISo, est une association estudiantine professionnelle implantée au sein de l'école nationale d'ingénieurs de Sousse  [<a href="#">&hellip;</a>]</p>
+          <footer>
+            <ul class="faico clear">
+              <li><a class="faicon-facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+              <li><a class="faicon-google-plus" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+              <li><a class="faicon-linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
+              <li><a class="faicon-twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a class="faicon-vk" href="#"><i class="fab fa-vk"></i></a></li>
+            </ul>
+          </footer>
+        </article>
+      </li>
+      <li class="one_quarter">
+        <article>
+          <figure><a class="imgover" href="#"><img src="images/demo/aero.png" alt=""></a>
+            <figcaption class="heading">Aerotronix Eniso</figcaption>
+          </figure>
+          <em>Aero</em>
+          <p>C'est une équipe Aero crée au sein de l'Ecole Nationale d'Ingénieurs de Sousse. [<a href="#">&hellip;</a>]</p>
+          <footer>
+            <ul class="faico clear">
+              <li><a class="faicon-facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+              <li><a class="faicon-google-plus" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+              <li><a class="faicon-linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
+              <li><a class="faicon-twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a class="faicon-vk" href="#"><i class="fab fa-vk"></i></a></li>
+            </ul>
+          </footer>
+        </article>
+      </li>
+      <li class="one_quarter">
+        <article>
+          <figure><a class="imgover" href="#"><img src="images/demo/iee.png" alt=""></a>
+            <figcaption class="heading">Orange Tech Club ENISO</figcaption>
+          </figure>
+          <em>Web Et Réseaux</em>
+          <p>C'est une équipe d'Informatique/Réseaux crée au sein de l'Ecole Nationale d'Ingénieurs de Sousse.[<a href="#">&hellip;</a>]</p>
+          <footer>
+            <ul class="faico clear">
+              <li><a class="faicon-facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+              <li><a class="faicon-google-plus" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+              <li><a class="faicon-linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
+              <li><a class="faicon-twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a class="faicon-vk" href="#"><i class="fab fa-vk"></i></a></li>
+            </ul>
+          </footer>
+        </article>
+      </li>
+      <li class="one_quarter">
+        <article>
+          <figure><a class="imgover" href="#"><img src="images/demo/team.png" alt=""></a>
+            <figcaption class="heading">ENISo Team</figcaption>
+          </figure>
+          <em>Robotiques</em>
+          <p>C'est une équipe de robotique crée au sein de l'Ecole Nationale d'Ingénieurs de Sousse. [<a href="#">&hellip;</a>]</p>
+          <footer>
+            <ul class="faico clear">
+              <li><a class="faicon-facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+              <li><a class="faicon-google-plus" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+              <li><a class="faicon-linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
+              <li><a class="faicon-twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a class="faicon-vk" href="#"><i class="fab fa-vk"></i></a></li>
+            </ul>
+          </footer>
+        </article>
+      </li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </section>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <section id="testimonials" class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <div class="center btmspace-80">
+      <h6 class="heading underline font-x2">News</h6>
+    </div>
+    <ul class="nospace group btmspace-80">
+      <li class="one_third first">
+        <blockquote>Au cours de leur scolarité à l’ENISo, les élèves ingénieurs mettent en pratique l’enseignement dispensé et s’initient aux métiers d’ingénieur à travers trois stages obligatoires.</blockquote>
+        <figure class="clear"><img class="circle" src="images/demo/60x60.png" alt="">
+          <figcaption>
+            <h6 class="heading">Stages & PFE </h6>
+            <em>Directeur Stage</em></figcaption>
+        </figure>
+      </li>
+      <li class="one_third">
+        <blockquote>Lorem leo vel ligula vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; quisque urna velit accumsan bibendum scelerisque sed suscipit a velit duis nec ipsum</blockquote>
+        <figure class="clear"><img class="circle" src="images/demo/60x60.png" alt="">
+          <figcaption>
+            <h6 class="heading">B. Doe</h6>
+            <em>Director / Company Name</em></figcaption>
+        </figure>
+      </li>
+      <li class="one_third">
+        <blockquote>Sed urna egestas consectetuer suspendisse lorem ut tortor est lobortis eu venenatis vitae pretium eu felis cras erat est cursus sed dignissim sed euismod in turpis praesent vestibulum hendrerit</blockquote>
+        <figure class="clear"><img class="circle" src="images/demo/60x60.png" alt="">
+          <figcaption>
+            <h6 class="heading">C. Doe</h6>
+            <em>Marketing / Company Name</em></figcaption>
+        </figure>
+      </li>
+    </ul>
+    <footer><a class="btn" href="#">View More &raquo;</a></footer>
+    <!-- ################################################################################################ -->
+  </section>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row2">
+  <section class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <div class="center btmspace-80">
+      <h6 class="heading underline font-x2">Ante duis eu dui semper</h6>
+    </div>
+    <ul class="nospace group latest">
+      <li class="one_third first">
+        <article>
+          <time datetime="2045-04-06T08:15+00:00"><i class="far fa-calendar-alt rgtspace-5"></i> 06<sup>th</sup> April 2045 @ 15:00pm</time>
+          <div class="excerpt">
+            <h6 class="heading"><a href="#">Ante euismod viverra integer sagittis mauris facilisis</a></h6>
+            <p>Dolor semper massa fusce condimentum elit sit amet est aenean dui suspendisse mattis aenean est massa vulputate eget eleifend ac consequat non velit vestibulum ante ipsum [<a href="#">&hellip;</a>]</p>
+            <ul class="meta">
+              <li><i class="fas fa-user rgtspace-5"></i> <a href="#">Admin</a></li>
+              <li><i class="fas fa-tags rgtspace-5"></i> <a href="#">Tag 1</a>, <a href="#">Tag 2</a></li>
+            </ul>
+          </div>
+        </article>
+      </li>
+      <li class="one_third">
+        <article>
+          <time datetime="2045-04-05T08:14+00:00"><i class="far fa-calendar-alt rgtspace-5"></i> 05<sup>th</sup> April 2045 @ 14:00pm</time>
+          <div class="excerpt">
+            <h6 class="heading"><a href="#">Primis in faucibus orci luctus et ultrices posuere</a></h6>
+            <p>Cubilia curae vivamus feugiat ultrices ligula cras nec risus in a nulla nam tempus odio in erat suspendisse potenti fusce eleifend maecenas tempus gravida lorem pellentesque [<a href="#">&hellip;</a>]</p>
+            <ul class="meta">
+              <li><i class="fas fa-user rgtspace-5"></i> <a href="#">Admin</a></li>
+              <li><i class="fas fa-tags rgtspace-5"></i> <a href="#">Tag 1</a>, <a href="#">Tag 2</a></li>
+            </ul>
+          </div>
+        </article>
+      </li>
+      <li class="one_third">
+        <article>
+          <time datetime="2045-04-04T08:13+00:00"><i class="far fa-calendar-alt rgtspace-5"></i> 04<sup>th</sup> April 2045 @ 13:00pm</time>
+          <div class="excerpt">
+            <h6 class="heading"><a href="#">Justo maecenas sit amet mi nulla at erat adipiscing</a></h6>
+            <p>Enim condimentum varius cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus suspendisse aliquam lacus vitae mauris blandit semper donec [<a href="#">&hellip;</a>]</p>
+            <ul class="meta">
+              <li><i class="fas fa-user rgtspace-5"></i> <a href="#">Admin</a></li>
+              <li><i class="fas fa-tags rgtspace-5"></i> <a href="#">Tag 1</a>, <a href="#">Tag 2</a></li>
+            </ul>
+          </div>
+        </article>
+      </li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </section>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row4">
+  <footer id="footer" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div class="one_quarter first">
+      <h1 class="logoname clear"><a href="index.html"><i class="fas fa-handshake"></i> <span>Shicso</span></a></h1>
+      <p class="btmspace-30">Leo scelerisque at imperdiet in volutpat quis turpis praesent sit amet ante sed erat tempor consequat sed ut nibh nullam sagittis nunc a turpis nec [<a href="#">&hellip;</a>]</p>
+      <ul class="faico clear">
+        <li><a class="faicon-facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+        <li><a class="faicon-google-plus" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+        <li><a class="faicon-linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
+        <li><a class="faicon-twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a class="faicon-vk" href="#"><i class="fab fa-vk"></i></a></li>
+      </ul>
+    </div>
+    <div class="one_quarter">
+      <h6 class="heading">Felis lobortis pulvinar</h6>
+      <ul class="nospace linklist contact">
+        <li><i class="fas fa-map-marker-alt"></i>
+          <address>
+          Street Name &amp; Number, Town, Postcode/Zip
+          </address>
+        </li>
+        <li><i class="fas fa-phone"></i> +00 (123) 456 7890</li>
+        <li><i class="fas fa-fax"></i> +00 (123) 456 7890</li>
+        <li><i class="far fa-envelope"></i> info@domain.com</li>
+      </ul>
+    </div>
+    <div class="one_quarter">
+      <h6 class="heading">In cursus placerat velit</h6>
+      <ul class="nospace linklist">
+        <li><a href="#">Maecenas sem fusce quis</a></li>
+        <li><a href="#">Vel leo semper rhoncus ut</a></li>
+        <li><a href="#">Suscipit pede eu diam class</a></li>
+        <li><a href="#">Aptent taciti sociosqu ad</a></li>
+      </ul>
+    </div>
+    <div class="one_quarter">
+      <h6 class="heading">Litora torquent conubia</h6>
+      <ul class="nospace linklist">
+        <li>
+          <article>
+            <p class="nospace btmspace-10"><a href="#">Nostra per inceptos himenaeos cras augue est dictum quis&hellip;</a></p>
+            <time class="block font-xs" datetime="2045-04-06">Friday, 6<sup>th</sup> April 2045</time>
+          </article>
+        </li>
+        <li>
+          <article>
+            <p class="nospace btmspace-10"><a href="#">Suscipit vel est in pulvinar aliquam vulputate purus in tincidunt&hellip;</a></p>
+            <time class="block font-xs" datetime="2045-04-05">Thursday, 5<sup>th</sup> April 2045</time>
+          </article>
+        </li>
+      </ul>
+    </div>
+    <!-- ################################################################################################ -->
+  </footer>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Domain Name</a></p>
+    <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
 </body>
 </html>
