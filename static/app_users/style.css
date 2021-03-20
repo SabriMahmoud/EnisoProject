@@ -1,0 +1,20 @@
+.log{
+    width: 30%;
+}
+
+.warp {
+    display: flex;
+    align-items: center;
+}
+
+.two-articles {
+    
+}
+
+.club-card {
+    height: 635.98px;
+    width: 347.98px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10%;
+}

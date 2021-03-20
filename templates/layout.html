@@ -1,0 +1,131 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+
+
+<!--
+Template Name: Shicso
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Copyright: OS-Templates.com
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>{% block title %}{% endblock %}</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="{% static 'app_users/layout/styles/layout.css' %}" rel="stylesheet" type="text/css" media="all">
+<link href="{% static 'app_users/style.css' %}" rel="stylesheet" type="text/css">
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row0">
+  <header id="header" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div id="logo" class="one_quarter first">
+      <h1 class="logoname clear">
+        <a href="{% url 'home' %}">
+          <div class="warp">
+            <img class="log" src="{% static 'app_users/images/demo/Logo2_ENISo,_Tunisie.svg.png' %}">
+            <span>  ENISo</span>
+          </div>
+        </a>
+      </h1>
+      <p>École Nationale d'Ingénieurs de Sousse</p>
+    </div>
+    <div class="three_quarter">
+      <ul class="nospace clear">
+        <li class="one_third first">
+          <div class="block clear"><a href="#"><i class="fas fa-phone"></i></a> <span><strong>Contacter l'Administration :</strong> +216 73 369 500</span></div>
+        </li>
+        <li class="one_third">
+          <div class="block clear"><a href="#"><i class="fas fa-envelope"></i></a> <span><strong>Fax : </strong> +216 73 369 506</span></div>
+        </li>
+        <li class="one_third">
+          <div class="block clear"><a href="#"><i class="fas fa-clock"></i></a> <span><strong>Adresse :</strong>BP 264 Sousse Erriadh 4023</span></div>
+        </li>
+      </ul>
+    </div>
+    <!-- ################################################################################################ -->
+  </header>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <div class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <nav id="mainav">
+      <ul class="clear">
+        <li class="active"><a href="{% url 'home' %}">Accueil</a></li>
+        <li><a class="drop" href="#">Administration</a>
+          <ul>
+            <li><a href="pages/gallery.html">Service Informatique</a></li>
+            <li><a href="pages/full-width.html">Service des Finances</a></li>
+            <li><a href="pages/sidebar-left.html">Service Scolarité</a></li>
+            <li><a href="pages/sidebar-right.html">Bibliothèque</a></li>
+            <li><a href="pages/basic-grid.html">Techniciens des laboratoires</a></li>
+            <li><a href="pages/font-icons.html">Ressources Humaines</a></li>
+          </ul>
+        </li>
+        <li><a class="drop" href="#">Nouveautés</a>
+          <ul>
+            <li><a href="#">Certifications</a></li>
+            <li><a class="drop" href="#">Co-diplomations</a>
+              <ul>
+                <li><a href="#">Level 3</a></li>
+                <li><a href="#">Level 3</a></li>
+                <li><a href="#">Level 3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Bourses D'Etudes</a></li>
+          </ul>
+        </li>
+        <li><a href="#">L'ENISO</a></li>
+        <li><a href="#">Formation Initiale</a></li>
+        <li><a href="#">Masters et Doctorat</a></li>
+        <li><a href="#">Association et clubs</a></li>
+      </ul>
+    </nav>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+
+
+
+
+
+
+
+{% block body %}
+
+{% endblock %}
+
+
+
+
+
+<div class="wrapper row5">
+    <div id="copyright" class="hoc clear"> 
+      <!-- ################################################################################################ -->
+      <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Domain Name</a></p>
+      <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+      <!-- ################################################################################################ -->
+    </div>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+  <!-- JAVASCRIPTS -->
+  <script src="{% static 'app_users/layout/scripts/jquery.min.js' %}"></script>
+  <script src="{% static 'app_users/layout/scripts/jquery.backtotop.js' %}"></script>
+  <script src="{% static 'app_users/layout/scripts/jquery.mobilemenu.js' %}"></script>
+  </body>
+  </html>
