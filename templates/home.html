@@ -42,7 +42,7 @@
         <h6 class="heading underline font-x2">À propos</h6>
         <p>L'École Nationale d'Ingénieurs de Sousse ou ENISo est une école d'ingénieurs tunisienne qui dépend de l'Université de Sousse. Elle vise à répondre, jour après jour, à un besoin national croissant d'ingénieurs spécialisés dans les industries de haute technologie. Avec ses filières, ses masters recherche et son master professionnel, elle forme des ingénieurs en génie informatique appliqué, en génie des télécommunications embarquées, en mécatronique, en génie mécanique de production et en génie électronique industriel.</p>
         <p class="btmspace-30">Fondée en juillet 2005, l'ENISo est d'abord hébergée dans le quartier Bab Jedid de Sousse, avant de s'installer en septembre 2011 dans le Technopole de Sousse, à proximité de la pépinière d'entreprises. </p>
-        <footer><a class="btn" href="#">Lire plus</a></footer>
+        <footer><a class="btn" href="{% url 'about' %}">Lire plus</a></footer>
       </div>
       <div class="one_half"><a class="imgover" href="#"><img class="borderedbox inspace-10" src="{% static 'app_users/images/demo/Student.png' %}" alt=""></a></div>
     </article>
@@ -153,6 +153,7 @@
           <footer>
             <ul class="faico clear">
               <li><a class="faicon-facebook" href="https://www.facebook.com/ENISo.junior.entreprise/"><i class="fab fa-facebook"></i></a></li>
+              <li><a class="faicon-linkedin" href="https://www.linkedin.com/company/junior-entreprise-eniso?originalSubdomain=fr"><i class="fab fa-linkedin"></i></a></li>
             </ul>
           </footer>
         </article>
@@ -209,8 +210,8 @@
           <p>L'IEEE, une association vouée à l'avancement de l'innovation et de l'excellence technologique au profit de l'humanité. C'est la plus grande société professionnelle technique au monde. [<a href="#">&hellip;</a>]</p>
           <footer>
             <ul class="faico clear">
+              <li><a class="faicon-facebook" href="https://eniso.ieee.tn/"><i class="fas fa-globe"></i></a></li>
               <li><a class="faicon-facebook" href="https://www.facebook.com/ENISoSB/"><i class="fab fa-facebook"></i></a></li>
-              <li><a class="faicon-vk" href="#"><i class="fab fa-vk"></i></a></li>
             </ul>
           </footer>
         </article>
@@ -328,62 +329,7 @@
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
-<div class="wrapper row4">
-  <footer id="footer" class="hoc clear"> 
-    <!-- ################################################################################################ -->
-    <div class="one_quarter first">
-      <h1 class="logoname clear"><a href="index.html"><i class="fas fa-handshake"></i> <span>Shicso</span></a></h1>
-      <p class="btmspace-30">Leo scelerisque at imperdiet in volutpat quis turpis praesent sit amet ante sed erat tempor consequat sed ut nibh nullam sagittis nunc a turpis nec [<a href="#">&hellip;</a>]</p>
-      <ul class="faico clear">
-        <li><a class="faicon-facebook" href="#"><i class="fab fa-facebook"></i></a></li>
-        <li><a class="faicon-google-plus" href="#"><i class="fab fa-google-plus-g"></i></a></li>
-        <li><a class="faicon-linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
-        <li><a class="faicon-twitter" href="#"><i class="fab fa-twitter"></i></a></li>
-        <li><a class="faicon-vk" href="#"><i class="fab fa-vk"></i></a></li>
-      </ul>
-    </div>
-    <div class="one_quarter">
-      <h6 class="heading">Felis lobortis pulvinar</h6>
-      <ul class="nospace linklist contact">
-        <li><i class="fas fa-map-marker-alt"></i>
-          <address>
-          Street Name &amp; Number, Town, Postcode/Zip
-          </address>
-        </li>
-        <li><i class="fas fa-phone"></i> +00 (123) 456 7890</li>
-        <li><i class="fas fa-fax"></i> +00 (123) 456 7890</li>
-        <li><i class="far fa-envelope"></i> info@domain.com</li>
-      </ul>
-    </div>
-    <div class="one_quarter">
-      <h6 class="heading">In cursus placerat velit</h6>
-      <ul class="nospace linklist">
-        <li><a href="#">Maecenas sem fusce quis</a></li>
-        <li><a href="#">Vel leo semper rhoncus ut</a></li>
-        <li><a href="#">Suscipit pede eu diam class</a></li>
-        <li><a href="#">Aptent taciti sociosqu ad</a></li>
-      </ul>
-    </div>
-    <div class="one_quarter">
-      <h6 class="heading">Litora torquent conubia</h6>
-      <ul class="nospace linklist">
-        <li>
-          <article>
-            <p class="nospace btmspace-10"><a href="#">Nostra per inceptos himenaeos cras augue est dictum quis&hellip;</a></p>
-            <time class="block font-xs" datetime="2045-04-06">Friday, 6<sup>th</sup> April 2045</time>
-          </article>
-        </li>
-        <li>
-          <article>
-            <p class="nospace btmspace-10"><a href="#">Suscipit vel est in pulvinar aliquam vulputate purus in tincidunt&hellip;</a></p>
-            <time class="block font-xs" datetime="2045-04-05">Thursday, 5<sup>th</sup> April 2045</time>
-          </article>
-        </li>
-      </ul>
-    </div>
-    <!-- ################################################################################################ -->
-  </footer>
-</div>
+
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->

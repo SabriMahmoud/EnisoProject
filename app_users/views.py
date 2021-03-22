@@ -9,6 +9,9 @@ from .models import  Contact
 def home(request):
     return render(request,'home.html')
 
+def about(request):
+    return render(request, 'about.html')
+
 def user_login(request):
     if request.method=="POST" :
         username=request.POST.get('username')
