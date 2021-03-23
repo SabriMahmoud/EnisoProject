@@ -6,8 +6,11 @@ from django.views.generic import CreateView
 from .models import  Contact
 
 # Create your views here.
-def index(request):
+def home(request):
     return render(request,'home.html')
+
+def about(request):
+    return render(request, 'about.html')
 
 def user_login(request):
     if request.method=="POST" :
@@ -18,9 +21,9 @@ def user_login(request):
             if user.is_active:
                 login(request,user)
                 return HttpResponseRedirect(reverse('index'))
-            else: return HttpResponse("COMPTE DESACTIVER")
+            else: return HttpResponse("compte desactivé")
         else: 
-            return HttpResponse("Username ou Mot de Passe incorrecte")
+            return HttpResponse("Username ou Mot de Passe incorrects")
     else:
         return render(request,'app_users/login.html')
 
