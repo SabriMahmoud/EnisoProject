@@ -1,3 +1,4 @@
+
 {% extends 'layout.html' %}
 
 {% load static %}
@@ -12,6 +13,100 @@
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <div class="wrapper bgded overlay" style="background-image:url('{% static 'app_users/images/demo/backgrounds/Students.jpg' %}');">
+
+{% load static %}
+<!DOCTYPE html>
+<!--
+Template Name: Shicso
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Copyright: OS-Templates.com
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>Eniso</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="{% static 'eniso/layout/styles/layout.css' %}" rel="stylesheet" type="text/css" media="all" >
+
+<link href="{% static 'style.css' % } " rel="stylesheet" type="text/css">
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row0">
+  <header id="header" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div id="logo" class="one_quarter first">
+      <h1 class="logoname clear"><a href="index.html"><img class="log" src="{% static 'eniso/images/demo/Logo2_ENISo,_Tunisie.svg.png' %}"><span>Eniso</span></a></h1>
+      <p>Ecole Nationale d'Ingenieurs De Sousse</p>
+    </div>
+    <div class="three_quarter">
+      <ul class="nospace clear">
+        <li class="one_third first">
+          <div class="block clear"><a href="#"><i class="fas fa-phone"></i></a> <span><strong>Contacter l'Administration :</strong> +216 73 369 500</span></div>
+        </li>
+        <li class="one_third">
+          <div class="block clear"><a href="#"><i class="fas fa-envelope"></i></a> <span><strong>Fax : </strong> +216 73 369 506</span></div>
+        </li>
+        <li class="one_third">
+          <div class="block clear"><a href="#"><i class="fas fa-clock"></i></a> <span><strong>Adresse :</strong> Adresse : BP 264 Sousse Erriadh 4023</span></div>
+        </li>
+      </ul>
+    </div>
+    <!-- ################################################################################################ -->
+  </header>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <div class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <nav id="mainav">
+      <ul class="clear">
+        <li class="active"><a href="index.html">Acceil</a></li>
+        <li><a class="drop" href="#">Administration</a>
+          <ul>
+            <li><a href="pages/gallery.html">Service Informatique</a></li>
+            <li><a href="pages/full-width.html">Service des Finances</a></li>
+            <li><a href="pages/sidebar-left.html">Service Scolarité</a></li>
+            <li><a href="pages/sidebar-right.html">Bibliothéque</a></li>
+            <li><a href="pages/basic-grid.html">Techniciens de Labos</a></li>
+            <li><a href="pages/font-icons.html">Resources Humaines</a></li>
+          </ul>
+        </li>
+        <li><a class="drop" href="#">Nouvelle</a>
+          <ul>
+            <li><a href="#">Certification</a></li>
+            <li><a class="drop" href="#">Co-diplomation</a>
+              <ul>
+                <li><a href="#">Level 3</a></li>
+                <li><a href="#">Level 3</a></li>
+                <li><a href="#">Level 3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Bourses D'Etudes</a></li>
+          </ul>
+        </li>
+        <li><a href="#">L'ENISO</a></li>
+        <li><a href="#">Formation Initiale</a></li>
+        <li><a href="#">Masters et Doctorat</a></li>
+        <li><a href="#">Association et clubs</a></li>
+      </ul>
+    </nav>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper bgded overlay" style="background-image:url({% static 'eniso/images/demo/backgrounds/Students.jpg' %});">
+
   
   
   
@@ -44,7 +139,11 @@
         <p class="btmspace-30">Fondée en juillet 2005, l'ENISo est d'abord hébergée dans le quartier Bab Jedid de Sousse, avant de s'installer en septembre 2011 dans le Technopole de Sousse, à proximité de la pépinière d'entreprises. </p>
         <footer><a class="btn" href="{% url 'about' %}">Lire plus</a></footer>
       </div>
+
       <div class="one_half"><a class="imgover" href="#"><img class="borderedbox inspace-10" src="{% static 'app_users/images/demo/Student.png' %}" alt=""></a></div>
+
+      <div class="one_half"><a class="imgover" href="#"><img class="borderedbox inspace-10" src="{% static 'eniso/images/demo/Student.png' %}" alt=""></a></div>
+
     </article>
     <!-- ################################################################################################ -->
     <!-- / main body -->
@@ -54,7 +153,11 @@
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
+
 <div class="wrapper bgded overlay " style="background-image:url('{% static 'app_users/images/demo/eniso-bg-shot.jpeg' %}');">
+
+<div class="wrapper bgded overlay dark" style="background-image:url({% static 'images/demo/backgrounds/01.png' %});">
+
   <div id="shout" class="hoc container clear"> 
     <!-- ################################################################################################ -->
     <article>
@@ -145,8 +248,12 @@
     <ul class="nospace group">
       <li class="one_third first club-card">
         <article>
+
           <figure><a class="imgover" href="#"><img src="{% static 'app_users/images/demo/jee.jpg' %}" alt=""></a>
             <figcaption class="heading">Junior entreprise ENISo</figcaption>
+          <figure><a class="imgover" href="#"><img src="{% static 'eniso/images/demo/jee.jpg' %} " alt="jee"></a>
+            <figcaption class="heading">Junior Entreprise ENISo - JEENISo</figcaption>
+
           </figure>
           <em>Enseignement Théorique Et communications</em>
           <p>JEENISo, Junior Entreprise ENISo, est une association estudiantine professionnelle qui permet aux étudiants de mettre en pratique leur enseignement théorique.  [<a href="#">&hellip;</a>]</p>
@@ -160,8 +267,13 @@
       </li>
       <li class="one_third club-card">
         <article>
+
           <figure><a class="imgover" href="#"><img src="{% static 'app_users/images/demo/aero.png' %}" alt=""></a>
             <figcaption class="heading">Aerotronix ENISo</figcaption>
+
+          <figure><a class="imgover" href="#"><img src="{% static 'eniso/images/demo/aero.png' %}" alt=""></a>
+            <figcaption class="heading">Aerotronix Eniso</figcaption>
+
           </figure>
           <em>Aéronautiques</em>
           <p>Le club Aerotronix vise à promouvoir l’aéromodélisme dans l’esprit des élèves ingénieurs, une discipline qui mélange la mécanique, l’électronique et l’informatique. [<a href="#">&hellip;</a>]</p>
@@ -174,8 +286,13 @@
       </li>
       <li class="one_third club-card">
         <article>
+
           <figure><a class="imgover" href="#"><img src="{% static 'app_users/images/demo/otce.jpeg' %}" alt=""></a>
             <figcaption class="heading">Orange Tech Club ENISo</figcaption>
+
+          <figure><a class="imgover" href="#"><img src="{% static 'eniso/images/demo/iee.png' %}" alt=""></a>
+            <figcaption class="heading">Orange Tech Club ENISO</figcaption>
+
           </figure>
           <em>Web Et Réseaux</em>
           <p>Orange Tech Club ENISo vise à former les étudiants et les accompagner dans la préparation à la vie professionnelle à travers des sessions de formations, des projets et des ateliers soft skills.[<a href="#">&hellip;</a>]</p>
@@ -203,6 +320,7 @@
       </li>
       <li class="one_third club-card">
         <article>
+
           <figure><a class="imgover" href="#"><img src="{% static 'app_users/images/demo/ieee.png' %}" alt=""></a>
             <figcaption class="heading">IEEE ENISo Student Branch</figcaption>
           </figure>
@@ -219,6 +337,9 @@
       <li class="one_third club-card">
         <article>
           <figure><a class="imgover" href="#"><img src="{% static 'app_users/images/demo/team.png' %}" alt=""></a>
+
+          <figure><a class="imgover" href="#"><img src="{% static 'eniso/images/demo/team.png' %}"  alt=""></a>
+
             <figcaption class="heading">ENISo Team</figcaption>
           </figure>
           <em>Robotiques</em>
@@ -336,3 +457,12 @@
 
 
 {% endblock %}
+
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="./layout/scripts/jquery.min.js"></script>
+<script src="./layout/scripts/jquery.backtotop.js"></script>
+<script src="./layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>
+
