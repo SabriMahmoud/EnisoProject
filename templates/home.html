@@ -26,82 +26,7 @@ Licence URI: https://www.os-templates.com/template-terms
 -->
 <html lang="">
 <!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
-<head>
-<title>Eniso</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link href="{% static 'eniso/layout/styles/layout.css' %}" rel="stylesheet" type="text/css" media="all" >
 
-<link href="{% static 'style.css' % } " rel="stylesheet" type="text/css">
-</head>
-<body id="top">
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<div class="wrapper row0">
-  <header id="header" class="hoc clear"> 
-    <!-- ################################################################################################ -->
-    <div id="logo" class="one_quarter first">
-      <h1 class="logoname clear"><a href="index.html"><img class="log" src="{% static 'eniso/images/demo/Logo2_ENISo,_Tunisie.svg.png' %}"><span>Eniso</span></a></h1>
-      <p>Ecole Nationale d'Ingenieurs De Sousse</p>
-    </div>
-    <div class="three_quarter">
-      <ul class="nospace clear">
-        <li class="one_third first">
-          <div class="block clear"><a href="#"><i class="fas fa-phone"></i></a> <span><strong>Contacter l'Administration :</strong> +216 73 369 500</span></div>
-        </li>
-        <li class="one_third">
-          <div class="block clear"><a href="#"><i class="fas fa-envelope"></i></a> <span><strong>Fax : </strong> +216 73 369 506</span></div>
-        </li>
-        <li class="one_third">
-          <div class="block clear"><a href="#"><i class="fas fa-clock"></i></a> <span><strong>Adresse :</strong> Adresse : BP 264 Sousse Erriadh 4023</span></div>
-        </li>
-      </ul>
-    </div>
-    <!-- ################################################################################################ -->
-  </header>
-</div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<div class="wrapper row1">
-  <div class="hoc clear"> 
-    <!-- ################################################################################################ -->
-    <nav id="mainav">
-      <ul class="clear">
-        <li class="active"><a href="index.html">Acceil</a></li>
-        <li><a class="drop" href="#">Administration</a>
-          <ul>
-            <li><a href="pages/gallery.html">Service Informatique</a></li>
-            <li><a href="pages/full-width.html">Service des Finances</a></li>
-            <li><a href="pages/sidebar-left.html">Service Scolarité</a></li>
-            <li><a href="pages/sidebar-right.html">Bibliothéque</a></li>
-            <li><a href="pages/basic-grid.html">Techniciens de Labos</a></li>
-            <li><a href="pages/font-icons.html">Resources Humaines</a></li>
-          </ul>
-        </li>
-        <li><a class="drop" href="#">Nouvelle</a>
-          <ul>
-            <li><a href="#">Certification</a></li>
-            <li><a class="drop" href="#">Co-diplomation</a>
-              <ul>
-                <li><a href="#">Level 3</a></li>
-                <li><a href="#">Level 3</a></li>
-                <li><a href="#">Level 3</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Bourses D'Etudes</a></li>
-          </ul>
-        </li>
-        <li><a href="#">L'ENISO</a></li>
-        <li><a href="#">Formation Initiale</a></li>
-        <li><a href="#">Masters et Doctorat</a></li>
-        <li><a href="#">Association et clubs</a></li>
-      </ul>
-    </nav>
-    <!-- ################################################################################################ -->
-  </div>
-</div>
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
@@ -117,8 +42,8 @@ Licence URI: https://www.os-templates.com/template-terms
         pour le future</h3>
       <footer>
         <ul class="nospace inline pushright">
-          <li><a class="btn" href="#">Nos clubs</a></li>
-          <li><a class="btn inverse" href="#">Formations des ingénieurs</a></li>
+          <li><a class="btn" href="#team">Nos clubs</a></li>
+          <li><a class="btn inverse" href="#services">Formations des ingénieurs</a></li>
         </ul>
       </footer>
     </article>
@@ -140,7 +65,6 @@ Licence URI: https://www.os-templates.com/template-terms
         <footer><a class="btn" href="{% url 'about' %}">Lire plus</a></footer>
       </div>
 
-      <div class="one_half"><a class="imgover" href="#"><img class="borderedbox inspace-10" src="{% static 'app_users/images/demo/Student.png' %}" alt=""></a></div>
 
       <div class="one_half"><a class="imgover" href="#"><img class="borderedbox inspace-10" src="{% static 'eniso/images/demo/Student.png' %}" alt=""></a></div>
 
@@ -162,7 +86,7 @@ Licence URI: https://www.os-templates.com/template-terms
     <!-- ################################################################################################ -->
     <article>
       <h3 class="heading font-x2">N'hésitez pas à nous rejoindre</h3>
-      <p>Adipiscing dignissim non lectus pellentesque tellus nisi imperdiet at pretium ut iaculis tempor ligula nulla facilisi aliquam venenatis leo et orci sed mauris fusce aliquam suspendisse potenti sed tempus tempor.</p>
+      <p>EE</p>
     </article>
     <!-- ################################################################################################ -->
   </div>
@@ -178,21 +102,21 @@ Licence URI: https://www.os-templates.com/template-terms
     </div>
     <ul class="nospace group">
       <li class="one_third">
-        <article><a href="#"><i class="fab fa-fort-awesome"></i></a>
+        <article><a href="#"><!--<i class="fab fa-fort-awesome"></i>--></a>
           <h6 class="heading">Informatique Appliquée</h6>
           <p>Adossée au département Informatique Industrielle, la filière Informatique Appliquée (IA) dispense une formation polyvalente axée autour de l’informatique, l’automatique, la robotique et les communications.</p>
           <footer><a href="#"><i class="fas fa-arrow-right"></i></a></footer>
         </article>
       </li>
       <li class="one_third" >
-        <article style="height: 272px;"><a href="#"><i class="fab fa-deviantart" ></i></a>
+        <article style="height: 272px;"><a href="#"><!--<i class="fab fa-deviantart" ></i>--></a>
           <h6 class="heading">Génie Mécatronique</h6>
           <p>Adossée au département de Mécanique Avancée, la filière Mécatronique dispense une formation polyvalente axée autour de la mécanique, l’électronique et l’informatique.</p>
           <footer><a href="#"><i class="fas fa-arrow-right"></i></a></footer>
         </article>
       </li>
       <li class="one_third">
-        <article><a href="#"><i class="fab fa-sticker-mule"></i></a>
+        <article><a href="#"><!--<i class="fab fa-sticker-mule"></i>--></a>
           <h6 class="heading">Génie Télécommunications Embarquées</h6>
           <p>Adossée au département Informatique Industrielle, la filière Télécommunications Embarquées (GTE) dispense une formation polyvalente axée autour de l’internet des objets.</p>
           <footer><a href="#"><i class="fas fa-arrow-right"></i></a></footer>
@@ -200,14 +124,14 @@ Licence URI: https://www.os-templates.com/template-terms
       </li>
       <div class="two-articles">
         <li class="one_third">
-          <article><a href="#"><i class="fas fa-user-secret"></i></a>
+          <article><a href="#"><!--<i class="fas fa-user-secret"></i>--></a>
             <h6 class="heading">Génie Electronique Industrielle</h6>
             <p>Adossée au département Electronique Industrielle, la filière qui porte le même nom (EI) dispense une formation polyvalente axée autour de l’électronique, les systèmes électriques et l’informatique.</p>
             <footer><a href="#"><i class="fas fa-arrow-right"></i></a></footer>
           </article>
         </li>
         <li class="one_third">
-          <article><a href="#"><i class="fas fa-quidditch"></i></a>
+          <article><a href="#"><!--<i class="fas fa-quidditch"></i>--></a>
             <h6 class="heading">Génie Mécanique & Productique</h6>
             <p>Adossée au département de Mécanique Avancée, la filière Mécanique et Productique dispense une formation polyvalente axée autour de la fabrication, matériaux, mécanique, conception, gestion, etc.</p>
             <footer><a href="#"><i class="fas fa-arrow-right"></i></a></footer>
@@ -232,14 +156,14 @@ Licence URI: https://www.os-templates.com/template-terms
   <section id="cta" class="hoc container clear"> 
     <!-- ################################################################################################ -->
     <h6 class="three_quarter first">Engagez dans la vie associative de l'école</h6>
-    <footer class="one_quarter"><a class="btn" href="#">Parturient nascetur</a></footer>
+    <footer class="one_quarter"><a class="btn" href="#">Vasy</a></footer>
     <!-- ################################################################################################ -->
   </section>
 </div>
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
-<div class="wrapper row3">
+<div id="team" class="wrapper row3">
   <section id="team" class="hoc container clear"> 
     <!-- ################################################################################################ -->
     <div class="center btmspace-80">
@@ -249,8 +173,7 @@ Licence URI: https://www.os-templates.com/template-terms
       <li class="one_third first club-card">
         <article>
 
-          <figure><a class="imgover" href="#"><img src="{% static 'app_users/images/demo/jee.jpg' %}" alt=""></a>
-            <figcaption class="heading">Junior entreprise ENISo</figcaption>
+   
           <figure><a class="imgover" href="#"><img src="{% static 'eniso/images/demo/jee.jpg' %} " alt="jee"></a>
             <figcaption class="heading">Junior Entreprise ENISo - JEENISo</figcaption>
 
@@ -268,8 +191,7 @@ Licence URI: https://www.os-templates.com/template-terms
       <li class="one_third club-card">
         <article>
 
-          <figure><a class="imgover" href="#"><img src="{% static 'app_users/images/demo/aero.png' %}" alt=""></a>
-            <figcaption class="heading">Aerotronix ENISo</figcaption>
+          
 
           <figure><a class="imgover" href="#"><img src="{% static 'eniso/images/demo/aero.png' %}" alt=""></a>
             <figcaption class="heading">Aerotronix Eniso</figcaption>
@@ -287,8 +209,6 @@ Licence URI: https://www.os-templates.com/template-terms
       <li class="one_third club-card">
         <article>
 
-          <figure><a class="imgover" href="#"><img src="{% static 'app_users/images/demo/otce.jpeg' %}" alt=""></a>
-            <figcaption class="heading">Orange Tech Club ENISo</figcaption>
 
           <figure><a class="imgover" href="#"><img src="{% static 'eniso/images/demo/iee.png' %}" alt=""></a>
             <figcaption class="heading">Orange Tech Club ENISO</figcaption>
@@ -338,7 +258,6 @@ Licence URI: https://www.os-templates.com/template-terms
         <article>
           <figure><a class="imgover" href="#"><img src="{% static 'app_users/images/demo/team.png' %}" alt=""></a>
 
-          <figure><a class="imgover" href="#"><img src="{% static 'eniso/images/demo/team.png' %}"  alt=""></a>
 
             <figcaption class="heading">ENISo Team</figcaption>
           </figure>
@@ -374,23 +293,23 @@ Licence URI: https://www.os-templates.com/template-terms
         </figure>
       </li>
       <li class="one_third">
-        <blockquote>Lorem leo vel ligula vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; quisque urna velit accumsan bibendum scelerisque sed suscipit a velit duis nec ipsum</blockquote>
+        <blockquote>Ahmed Ghrib, le co-fondateur & CEO de LoDeep, propose aux étudiants de 1ère année et 2eme année en Informatique Appliquée des stages d'été. Veuillez les transférer ce catalogue de stages. </blockquote>
         <figure class="clear"><img class="circle" src="{% static 'app_users/images/demo/60x60.png' %}" alt="">
           <figcaption>
-            <h6 class="heading">B. Doe</h6>
-            <em>Director / Company Name</em></figcaption>
+            <h6 class="heading">Ahmed Ghrib</h6>
+            <em> LoDeep</em></figcaption>
         </figure>
       </li>
       <li class="one_third">
-        <blockquote>Sed urna egestas consectetuer suspendisse lorem ut tortor est lobortis eu venenatis vitae pretium eu felis cras erat est cursus sed dignissim sed euismod in turpis praesent vestibulum hendrerit</blockquote>
+        <blockquote>Emploi du temps des cours Doctoraux en Génie Electrique de l'A.U 2020/2021: voir les emplois du temps des Doctorats.</blockquote>
         <figure class="clear"><img class="circle" src="{% static 'app_users/images/demo/60x60.png' %}" alt="">
           <figcaption>
-            <h6 class="heading">C. Doe</h6>
-            <em>Marketing / Company Name</em></figcaption>
+            <h6 class="heading">Eniso</h6>
+            <em>Eniso</em></figcaption>
         </figure>
       </li>
     </ul>
-    <footer><a class="btn" href="#">View More &raquo;</a></footer>
+    <footer><a class="btn" href="#">Voir plus &raquo;</a></footer>
     <!-- ################################################################################################ -->
   </section>
 </div>
@@ -401,17 +320,17 @@ Licence URI: https://www.os-templates.com/template-terms
   <section class="hoc container clear"> 
     <!-- ################################################################################################ -->
     <div class="center btmspace-80">
-      <h6 class="heading underline font-x2">Ante duis eu dui semper</h6>
+      <h6 class="heading underline font-x2">Espaces Eléves Ingenieurs </h6>
     </div>
     <ul class="nospace group latest">
       <li class="one_third first">
         <article>
           <time datetime="2045-04-06T08:15+00:00"><i class="far fa-calendar-alt rgtspace-5"></i> 06<sup>th</sup> April 2045 @ 15:00pm</time>
           <div class="excerpt">
-            <h6 class="heading"><a href="#">Ante euismod viverra integer sagittis mauris facilisis</a></h6>
-            <p>Dolor semper massa fusce condimentum elit sit amet est aenean dui suspendisse mattis aenean est massa vulputate eget eleifend ac consequat non velit vestibulum ante ipsum [<a href="#">&hellip;</a>]</p>
+            <h6 class="heading"><a href="#">Emplois du Temps</a></h6>
+            <p>Formation d'Ingénieur Année universitaire 2020/2021[<a href="#">&hellip;</a>]</p>
             <ul class="meta">
-              <li><i class="fas fa-user rgtspace-5"></i> <a href="#">Admin</a></li>
+              <li><i class="fas fa-user rgtspace-5"></i> <a href="#">Voir</a></li>
               <li><i class="fas fa-tags rgtspace-5"></i> <a href="#">Tag 1</a>, <a href="#">Tag 2</a></li>
             </ul>
           </div>
@@ -421,10 +340,10 @@ Licence URI: https://www.os-templates.com/template-terms
         <article>
           <time datetime="2045-04-05T08:14+00:00"><i class="far fa-calendar-alt rgtspace-5"></i> 05<sup>th</sup> April 2045 @ 14:00pm</time>
           <div class="excerpt">
-            <h6 class="heading"><a href="#">Primis in faucibus orci luctus et ultrices posuere</a></h6>
-            <p>Cubilia curae vivamus feugiat ultrices ligula cras nec risus in a nulla nam tempus odio in erat suspendisse potenti fusce eleifend maecenas tempus gravida lorem pellentesque [<a href="#">&hellip;</a>]</p>
+            <h6 class="heading"><a href="#">DS et Examens</a></h6>
+            <p>Formation d'Ingénieur Année universitaire 2020/2021 [<a href="#">&hellip;</a>]</p>
             <ul class="meta">
-              <li><i class="fas fa-user rgtspace-5"></i> <a href="#">Admin</a></li>
+              <li><i class="fas fa-user rgtspace-5"></i> <a href="#">Voir</a></li>
               <li><i class="fas fa-tags rgtspace-5"></i> <a href="#">Tag 1</a>, <a href="#">Tag 2</a></li>
             </ul>
           </div>
@@ -434,10 +353,12 @@ Licence URI: https://www.os-templates.com/template-terms
         <article>
           <time datetime="2045-04-04T08:13+00:00"><i class="far fa-calendar-alt rgtspace-5"></i> 04<sup>th</sup> April 2045 @ 13:00pm</time>
           <div class="excerpt">
-            <h6 class="heading"><a href="#">Justo maecenas sit amet mi nulla at erat adipiscing</a></h6>
-            <p>Enim condimentum varius cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus suspendisse aliquam lacus vitae mauris blandit semper donec [<a href="#">&hellip;</a>]</p>
+            <h6 class="heading"><a href="#">Stages & PFE </a></h6>
+            <p>Livret d'ingénieurs ENISo promotion 2018.
+              Livret d'ingénieurs ENISo promotion 2019.
+              Rapport annuel ENISo 2019 de la direction des stages. [<a href="#">&hellip;</a>]</p>
             <ul class="meta">
-              <li><i class="fas fa-user rgtspace-5"></i> <a href="#">Admin</a></li>
+              <li><i class="fas fa-user rgtspace-5"></i> <a href="#">voir</a></li>
               <li><i class="fas fa-tags rgtspace-5"></i> <a href="#">Tag 1</a>, <a href="#">Tag 2</a></li>
             </ul>
           </div>
