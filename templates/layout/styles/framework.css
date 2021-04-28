@@ -1,23 +1,29 @@
 @charset "utf-8";
-/*
-Template Name: Shicso
-Author: <a href="https://www.os-templates.com/">OS Templates</a>
-Author URI: https://www.os-templates.com/
-Copyright: OS-Templates.com
-Licence: Free to use under our free template licence terms
-Licence URI: https://www.os-templates.com/template-terms
-File: Framework CSS
-*/
 
-html{overflow-y:scroll; overflow-x:hidden;}
-html, body{margin:0; padding:0; font-size:14px; line-height:1.6em;}
+
+html{
+    overflow-y:scroll;
+     overflow-x:hidden;
+    }
+html, body{margin:0;
+       padding:0;
+      font-size:14px; 
+      line-height:1.6em;}
 
 *, *::before, *::after{box-sizing:border-box;}
 
-.bold{font-weight:bold;}
-.center{text-align:center;}
-.right{text-align:right;}
-.uppercase{text-transform:uppercase;}
+.bold{
+    font-weight:bold;
+}
+.center{
+    text-align:center;
+}
+.right{
+    text-align:right;
+}
+.uppercase{
+    text-transform:uppercase;
+}
 .capitalise{text-transform:capitalize;}
 .hidden{display:none;}
 .nospace{margin:0; padding:0; list-style:none;}
@@ -61,18 +67,28 @@ img{width:auto; max-width:100%; height:auto; margin:0; padding:0; border:none; l
 
 /* Fonts
 --------------------------------------------------------------------------------------------------------------- */
-body, input, textarea, select{font-family:Verdana, Geneva, sans-serif;}
-h1, h2, h3, h4, h5, h6, .heading{font-family:Georgia, "Times New Roman", Times, serif;}
+body, input, textarea, select{
+    font-family:Verdana, Geneva, sans-serif;
+}
+h1, h2, h3, h4, h5, h6, .heading{
+    font-family:Georgia, "Times New Roman", Times, serif;
+}
 
 
 /* Forms
 --------------------------------------------------------------------------------------------------------------- */
 form, fieldset, legend{margin:0; padding:0; border:none;}
 legend{display:none;}
-label, input, textarea, select, button{display:block; resize:none; outline:none; color:inherit; font-size:inherit; font-family:inherit; vertical-align:middle;}
+label, input, textarea, select, button{
+    display:block; resize:none; outline:none; color:inherit; font-size:inherit; font-family:inherit; vertical-align:middle;
+}
 label{margin-bottom:5px;}
-:required, :invalid{outline:none; box-shadow:none;}
-::placeholder{opacity:1;}/* Makes sure the placeholder text is not transparent */
+:required, :invalid{outline:none; 
+    box-shadow:none;
+}
+::placeholder{
+    opacity:1;
+}
 
 
 /* Generalise
@@ -87,34 +103,34 @@ h1, h2, h3, h4, h5, h6, .heading{margin:0 0 20px 0; font-size:1.4rem; line-heigh
 address{font-style:normal; font-weight:normal;}
 hr{display:block; width:100%; height:1px; border:solid; border-width:1px 0 0 0;}
 
-.font-xs{font-size:1rem;}
-.font-x2{font-size:2.2rem;}
+.font-xs{
+    font-size:1rem;
+}
+.font-x2{
+    font-size:2.2rem;
+}
 .font-x3{font-size:3.2rem;}
 
 .wrapper{display:block; position:relative; width:100%; margin:0; padding:0; text-align:left; word-wrap:break-word;}
-/*
-The "hoc" class is a generic class used to centre a containing element horizontally
-It should be used in conjunction with a second class or ID
-*/
 .hoc{display:block; margin:0 auto;}
 
 
-/* HTML 5 Overrides
+/* 
 --------------------------------------------------------------------------------------------------------------- */
 address, article, aside, figcaption, figure, footer, header, main, nav, section{display:block; margin:0; padding:0;}
 
 
-/* Grid - RS-MQF 1140 V.2 - https://www.os-templates.com/free-basic-html5-templates/rs-mqf-1140
+/* 
 --------------------------------------------------------------------------------------------------------------- */
-.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:inline-block; float:left; margin:0 0 0 4.21052%; list-style:none;}
+.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:inline-block; float:left; margin:0 0 0 4%; list-style:none;}
 
 .first{margin-left:0; clear:left;}
 
-.one_quarter{width:21.8421%;}
-.one_third{width:30.52631%;}
-.one_half, .two_quarter{width:47.89473%;}
-.two_third{width:65.26315%;}
-.three_quarter{width:73.94736%;}
+.one_quarter{width:22%;}
+.one_third{width:30%;}
+.one_half, .two_quarter{width:48%;}
+.two_third{width:65%;}
+.three_quarter{width:74%;}
 
 
 /* Spacing
