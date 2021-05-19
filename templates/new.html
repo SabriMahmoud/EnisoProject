@@ -1,0 +1,106 @@
+
+{% extends 'layout.html' %}
+
+{% load static %}
+
+{% block title %}
+École nationale des ingénieurs de Sousse
+{% endblock %}
+
+{% block body %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<div class="wrapper bgded overlay dark" style="background-image:url('{% static 'app_users/images/demo/backgrounds/eniso.jpg' %}');">
+  <div id="breadcrumb" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <h6 class="heading">Nouveautés</h6>
+    <ul>
+      <li><a href="#">Certification</a></li>
+      <li><a href="#">Co-diplomation</a></li>
+      <li><a href="#">Bourse</a></li>
+      
+    </ul>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="content"> 
+      <!-- ################################################################################################ -->
+      <h1 id="Certification">Certifications</h1>
+      <li>Labview</li>
+
+      <img class="imgr borderedbox inspace-5" src="{% static 'app_users/images/demo/gallery/labview.jpg' %}" alt="">
+      <p>Labview (Laboratory Virtual Instrument Engineering WorkBench) est un logiciel de développement de programmes d'application. LabView utilise un langage de programmation essentiellement graphique dédié au contrôle, à l'acquisition, l'analyse et la présentation de données.</p>
+      <pre>
+
+            
+      </pre>
+      
+      <li>BigData</li>
+      <img class="imgl borderedbox inspace-5" src="{% static 'app_users/images/demo/gallery/Logo BIG-DATA.png' %}" alt="">
+    
+      <p>Expertise to use Big Data methodologies to collect & analyze large amounts of data from different sources, using IBM Watson Studio and Open Source Tools. The author has developed assets that teach students topics such as Apache Hadoop, Ambari, Spark, Big SQL, HDFS, YARN, MapReduce, ZooKeeper, Knox, Sqoop, and HBase</p>
+
+      <pre>
+
+         
+        
+
+
+
+      </pre>
+        <!-- ################################################################################################ -->
+        <h1 id="Codiplomation">Co-diplomation</h1>
+        <li>Double Diplome</li>
+  
+        <img class="imgr borderedbox inspace-5" src="{% static 'app_users/images/demo/gallery/OIP.PNG' %}" alt="">
+        <p>Au-delà de la simple mobilité, le fait d’avoir un deuxième diplôme dans le cadre de conventions entre l’ENISo et les autres établissements étrangers constitue une source de motivation pour les élèves ingénieurs.
+
+          Les élèves ingénieurs ayant fait au moins trois semestres d’études à l’ENISo (en dehors du PFE) pourraient ainsi obtenir un diplôme d’ingénieur et/ou de master, avec celui de l’ENISo. Cela donne de plus grandes chances d’admissibilité au cycle doctoral.
+          
+          Contacter l'administration pour plus d'information.</p>
+          <pre>
+
+            
+
+
+          </pre>
+        
+        <h1 id="Bourse">Bourses d'études</h1>
+       
+        <img class="imgl borderedbox inspace-5" src="{% static 'app_users/images/demo/gallery/Bourse.png' %}" alt="">
+        <p>La mobilité des élèves ingénieurs peut se faire dans plusieurs cadres notamment, les bourses d’étude, les projets de fin d’études, des masters, etc. Il est primordial de renforcer les mobilités sud-nord mais aussi nord-sud par l’accueil d’étudiants étrangers dans le cadre de leurs études, stages ou projets de fin d’études. Les mobilités nord-sud permettent de créer des ambassadeurs de l’ENISo à travers le monde et éventuellement créer d’autres opportunités de coopération à l’ENISo via un retour d’expérience.
+
+ 
+
+          <a href="#">Contacter</a> l'administration pour plus d'information.</p>
+          <pre>
+
+
+
+          </pre>
+      
+      
+    </div>
+ 
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+
+
+
+{% endblock %}
+</html>

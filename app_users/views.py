@@ -11,6 +11,8 @@ def home(request):
 
 def about(request):
     return render(request, 'about.html')
+def new(request):
+    return render(request, 'new.html')
 
 def user_login(request):
     if request.method=="POST" :
